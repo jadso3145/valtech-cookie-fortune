@@ -1,4 +1,12 @@
 {
-  "admin/test": "teste",
-  "store/test": "teste"
+  "admin/cookie-fortune.title": "Biscoito da Fortuna",
+  "admin/cookie-fortune.type-phrase": "Digite uma nova frase",
+  "admin/cookie-fortune.add-phrase": "Adicionar uma nova frase",
+  "admin/cookie-fortune.add": "Adicionar",
+  "admin/cookie-fortune.cancel": "Cancelar",
+  "admin/cookie-fortune.label-phrase": "Frase",
+  "admin/cookie-fortune.modal-title": "Digite uma nova mensagem de fortuna",
+  "admin/cookie-fortune.show-rows": "Mostrar linhas",
+  "store/cookie-fortune.get-fortune": "Receba sua fortuna",
+  "store/cookie-fortune.loading": "Carregando..."
 }

@@ -1,3 +1,3 @@
-import CookieFortuneAdmin from "./components/CookieFortuneAdmin";
+import CookieFortuneAdmin from "./components/adminCookieFortune/CookieFortuneAdmin";
 
 export default CookieFortuneAdmin

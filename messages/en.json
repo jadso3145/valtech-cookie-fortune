@@ -1,5 +1,12 @@
 {
-  "admin/test": "test",
-  "store/test": "test",
-  "admin/cookie-fortune.title": "Cookie Fortune"
+  "admin/cookie-fortune.title": "Cookie Fortune",
+  "admin/cookie-fortune.type-phrase": "Type a new phrase",
+  "admin/cookie-fortune.add-phrase": "Add a new phrase",
+  "admin/cookie-fortune.add": "Add",
+  "admin/cookie-fortune.cancel": "Cancel",
+  "admin/cookie-fortune.label-phrase": "Phrase",
+  "admin/cookie-fortune.modal-title": "Enter a new fortune message",
+  "admin/cookie-fortune.show-rows": "Show rows",
+  "store/cookie-fortune.get-fortune": "Get Your Fortune",
+  "store/cookie-fortune.loading": "Loading..."
 }
