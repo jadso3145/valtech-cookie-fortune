@@ -1,4 +1,6 @@
 {
   "admin/test": "teste",
-  "store/test": "teste"
+  "store/test": "teste",
+  "admin/cookie-fortune.title": "Galleta de la Fortuna"
+
 }
