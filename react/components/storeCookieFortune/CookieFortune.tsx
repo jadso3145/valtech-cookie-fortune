@@ -56,7 +56,7 @@ const CookieFortune = () => {
               <h3 className={styles.cookieMsgText}>{cookiemsg}</h3>
               <h5 className={styles.luckyNum}>{luckyNumber}</h5>
             </div>
-            <img src="https://i.postimg.cc/QxM0dvHd/cookie2.jpg" alt="" />
+            <img src="https://i.postimg.cc/QxM0dvHd/cookie2.jpg" alt="Fortune Cookie 2" />
           </div>
         ) : (
           <div className={styles.cookieCloseImg}>
