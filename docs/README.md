@@ -21,12 +21,16 @@ Este proyecto consta de dos aplicaciones personalizadas dentro de **VTEX IO**:
 
 ## **Notas Importantes**  
 Actualmente, la API Key y el API Token están hardcodeados. Sin embargo, en un entorno de producción, estos valores deben manejarse a través de una aplicación server-side siguiendo las buenas prácticas recomendadas por VTEX.  
-
 [Consulta las buenas prácticas de VTEX sobre claves de aplicación](https://help.vtex.com/en/tutorial/best-practices-application-keys--7b6nD1VMHa49aI5brlOvJm)  
+
+![image](https://github.com/user-attachments/assets/5ed712f2-3996-4796-9fa0-e7ea26422421)  
+
+
+## **Ruta para la app en admin**
+![image](https://github.com/user-attachments/assets/a93c6634-5d14-4e09-9600-9352026cf4d9)
 
 ---  
 ### **Capturas de Pantalla**  
-![image](https://github.com/user-attachments/assets/5ed712f2-3996-4796-9fa0-e7ea26422421)  
 ![image](https://github.com/user-attachments/assets/ea87b57a-8c58-4214-a7ad-71ac3778396a)  
 ![image](https://github.com/user-attachments/assets/e4f3d624-f389-4433-9b3a-f5513b5b9447)  
 ![image](https://github.com/user-attachments/assets/09c67736-5bc9-49f7-b506-f166e9028f54)  
