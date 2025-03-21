@@ -2,26 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Table } from "vtex.styleguide";
 import { useIntl } from "react-intl";
 import { adminTexts } from "../../utils/messages";
-
-interface Fortune {
-  id: string;
-  CookieFortune: string;
-}
-
-interface PaginationProps {
-  currentPage: number;
-  setCurrentPage: (currentPage: number) => void;
-  currentItemFrom: number;
-  setCurrentItemFrom: (currentItemFrom: number) => void;
-  currentItemTo: number;
-  setCurrentItemTo: (currentItemTo: number) => void;
-  tableLength: number;
-  setTableLength: (tableLength: number) => void;
-  fortunes: Fortune[];
-  deleteFortune: (id: string) => Promise<void>;
-  loading: boolean; // Agregar prop para loading
-  error: string | null; // Agregar prop para error
-}
+import { Fortune, PaginationProps } from "../../typings/cookiesFortune";
 
 const TableAdmin = (props: PaginationProps) => {
   const {
@@ -35,7 +16,6 @@ const TableAdmin = (props: PaginationProps) => {
     setTableLength,
     fortunes,
     deleteFortune,
-    // loading,
     error,
   } = props;
   const [itemsLength, setItemsLength] = useState<number>(0);
@@ -46,13 +26,13 @@ const TableAdmin = (props: PaginationProps) => {
   const tableSchema = {
     properties: {
       id: { type: "string", title: "ID" },
-      CookieFortune: { type: "string", title: "Fortune Message" },
+      CookieFortune: { type: "string", title: formatMessage(adminTexts.fortuneMessage) },
     },
   };
 
   const lineActions = [
     {
-      label: () => `Delete`,
+      label: () => formatMessage(adminTexts.deleteFortune),
       isDangerous: true,
       onClick:  ({ rowData }: { rowData: Fortune }) => deleteFortune(rowData.id)
     },
@@ -140,7 +120,7 @@ const TableAdmin = (props: PaginationProps) => {
           currentItemTo: currentItemTo,
           onRowsChange: handleRowsChange,
           textShowRows: formatMessage(adminTexts.showRows),
-          textOf: "of",
+          textOf: formatMessage(adminTexts.outOf),
           totalItems: itemsLength,
           rowsOptions: [10, 5, 15, 25],
         }}

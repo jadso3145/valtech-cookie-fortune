@@ -7,6 +7,9 @@
   "admin/cookie-fortune.label-phrase": "Frase",
   "admin/cookie-fortune.modal-title": "Ingresa un nuevo mensaje de fortuna",
   "admin/cookie-fortune.show-rows": "Mostrar filas",
+  "admin/cookie-fortune.delete-fortune": "Eliminar",
+  "admin/cookie-fortune.fortune-message": "Mensaje de la Fortuna",
+  "admin/cookie-fortune.out-of": "de",
   "store/cookie-fortune.get-fortune": "Obtén tu fortuna",
   "store/cookie-fortune.loading": "Cargando..."
 }

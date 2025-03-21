@@ -2,20 +2,7 @@ import React from "react";
 import { useIntl } from "react-intl";
 import { Button, Modal, Input } from "vtex.styleguide";
 import { adminTexts } from "../../utils/messages";
-
-interface ModalTableProps {
-  isModalOpen: boolean;
-  setIsModalOpen: (isModalOpen: boolean) => void;
-  newFortune: string;
-  setNewFortune: (newFortune: string) => void;
-  setCurrentPage: (currentPage: number) => void;
-  addFortune: (newFortune: string) => Promise<boolean>;
-  setCurrentItemFrom: (currentItemFrom: number) => void;
-  setCurrentItemTo: (currentItemTo: number) => void;
-  tableLength: number;
-  fetchFortunes: () => Promise<void>;
-  loading: boolean; // Agregar prop para loading
-}
+import { ModalTableProps } from "../../typings/cookiesFortune";
 
 const ModalTable = (props: ModalTableProps) => {
   const {
@@ -28,7 +15,6 @@ const ModalTable = (props: ModalTableProps) => {
     setCurrentItemFrom,
     setCurrentItemTo,
     tableLength,
-    // fetchFortunes,
     loading,
   } = props;
   const intl = useIntl();

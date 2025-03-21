@@ -37,7 +37,7 @@ const CookieFortuneAdmin = () => {
         setCurrentItemFrom={setCurrentItemFrom}
         setCurrentItemTo={setCurrentItemTo}
         tableLength={tableLength}
-        loading={loading} // Pasar el estado loading
+        loading={loading}
       />
 
       {loading ? (
@@ -46,7 +46,7 @@ const CookieFortuneAdmin = () => {
         </div>
       ) : error ? (
         <div>Error: {error}</div>
-      ) : fortunes.length > 0 ? (
+      ) : (
         <div className={styles.tableContainer}>
           <TableAdmin
             currentPage={currentPage}
@@ -63,9 +63,7 @@ const CookieFortuneAdmin = () => {
             error={error}
           />
         </div>
-      ) : (
-        <span className={styles.loader} />
-      )}
+      ) }
     </div>
   );
 };

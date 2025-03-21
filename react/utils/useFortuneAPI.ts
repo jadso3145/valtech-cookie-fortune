@@ -1,4 +1,5 @@
 import { useState, useCallback } from "react";
+import { Fortune } from "../typings/cookiesFortune";
 
 const API_KEY = "vtexappkey-valtech-GCPGGL";
 const API_TOKEN =
@@ -11,11 +12,6 @@ const authHeaders = {
   "X-VTEX-API-AppKey": API_KEY,
   "X-VTEX-API-AppToken": API_TOKEN,
 };
-
-interface Fortune {
-  id: string;
-  CookieFortune: string;
-}
 
 export const useFortuneAPI = () => {
   const [fortunes, setFortunes] = useState<Fortune[]>([]);
@@ -53,9 +49,8 @@ export const useFortuneAPI = () => {
       });
       if (!response.ok) throw new Error(`Error: ${response.status}`);
 
-      // Agregar un retraso para darle tiempo a la API
-      await new Promise((resolve) => setTimeout(resolve, 1000));
-      await fetchFortunes(); // Recargar los datos desde la API
+      await new Promise((resolve) => setTimeout(resolve, 500));
+      await fetchFortunes();
       return true;
     } catch (err) {
       setError((err as Error).message);
@@ -73,7 +68,7 @@ export const useFortuneAPI = () => {
         headers: authHeaders,
       });
       if (!response.ok) throw new Error(`Error: ${response.status}`);
-      await fetchFortunes(); // Recargar los datos desde la API
+      await fetchFortunes();
     } catch (err) {
       setError((err as Error).message);
       throw err;

@@ -37,4 +37,13 @@ export const adminTexts = defineMessages({
   showRows: {
     id: `${adminPrefix}show-rows`,
   },
+  deleteFortune: {
+    id: `${adminPrefix}delete-fortune`,
+  },
+  fortuneMessage: {
+    id: `${adminPrefix}fortune-message`,
+  },
+  outOf: {
+    id: `${adminPrefix}out-of`,
+  },
 })

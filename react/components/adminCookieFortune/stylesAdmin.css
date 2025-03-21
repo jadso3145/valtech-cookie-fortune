@@ -2,13 +2,14 @@
   width: 85%;
   margin: 0 auto;
   margin-top: 50px;
+  text-align: center;
 }
 
 .loaderContainer {
   display: grid;
   place-items: center;
   height: 50vh;
-  width: 70%;
+  width: 90%;
 }
 
 .tableContainer {

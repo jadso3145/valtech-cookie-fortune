@@ -7,6 +7,9 @@
   "admin/cookie-fortune.label-phrase": "Phrase",
   "admin/cookie-fortune.modal-title": "Enter a new fortune message",
   "admin/cookie-fortune.show-rows": "Show rows",
+  "admin/cookie-fortune.delete-fortune": "Delete",
+  "admin/cookie-fortune.fortune-message": "Fortune Message",
+  "admin/cookie-fortune.out-of": "of",
   "store/cookie-fortune.get-fortune": "Get Your Fortune",
   "store/cookie-fortune.loading": "Loading..."
 }
