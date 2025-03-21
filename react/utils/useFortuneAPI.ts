@@ -49,7 +49,7 @@ export const useFortuneAPI = () => {
       });
       if (!response.ok) throw new Error(`Error: ${response.status}`);
 
-      await new Promise((resolve) => setTimeout(resolve, 500));
+      await new Promise((resolve) => setTimeout(resolve, 1000));
       await fetchFortunes();
       return true;
     } catch (err) {
